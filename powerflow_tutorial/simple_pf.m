@@ -13,7 +13,7 @@ baseresult = runpf(cur_case, mpoption('model', 'AC'));
 
 %% how to run state estimation
 % whether adding noises or not
-USE_NOISE = 0;
+USE_NOISE = 1;
 % using matpower constant
 [PQ, PV, REF, NONE, BUS_I, BUS_TYPE, PD, QD, GS, BS, BUS_AREA, VM, ...
     VA, BASE_KV, ZONE, VMAX, VMIN, LAM_P, LAM_Q, MU_VMAX, MU_VMIN] = idx_bus;
