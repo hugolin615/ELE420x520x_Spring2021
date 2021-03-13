@@ -50,7 +50,10 @@ def unpack_dnp3m_response(data):
     for j in range(0, n_tuples):
         # TODO unpack the data to store all measurements
         #      all_measure should be a dictionary-type using index to indexed the corresponding measurement
-        # expected 3~4 lines of codes
+        #  In each iteration (expected 3~4 lines of codes)
+        #      Using j to locate the starting position of an index, extract its values as i
+        #      Using j to locate the starting position of an measurement, extract its values as m
+        #      Store m in all_measurement indexed by i
         TODO
 
     return all_measure
@@ -73,6 +76,11 @@ def pack_dnp3m_response(indices, measurements):
             # TODO packed the measurements indexed by the values in "indices"
             #       response_unpacked should be a list
             #       response_length should include the length of the response packet
+            #       In each iteration
+            #            adding i into response_unpacked
+            #            increase the response_length by 1
+            #            adding the measurements[i] into response_unpacked
+            #            increase the response_length by 4
             TODO
             
             n_index = n_index + 1
